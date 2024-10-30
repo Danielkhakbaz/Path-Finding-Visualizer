@@ -1,9 +1,9 @@
 import globals from "globals";
 import react from "eslint-plugin-react";
+import next from "@next/eslint-plugin-next";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import typescriptParser from "@typescript-eslint/parser";
 import reactRecommended from "eslint-plugin-react/configs/recommended.js";
-import next from "@next/eslint-plugin-next";
 
 export default [
   {
@@ -41,7 +41,7 @@ export default [
       "react/react-in-jsx-scope": 0,
       "spaced-comment": ["error", "always", { markers: ["/"] }],
       "new-cap": 0,
-      ...next.configs.recommended.rules,
+      // ...next.configs.recommended.rules,
     },
   },
 ];

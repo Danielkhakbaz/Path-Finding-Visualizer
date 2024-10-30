@@ -31,9 +31,9 @@ export default [
       },
     },
     plugins: {
-      "next.js": next,
       "@typescript-eslint": typescriptEslint,
       react,
+      next,
     },
     rules: {
       "react/jsx-no-unused-vars": "off",

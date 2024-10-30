@@ -41,7 +41,6 @@ export default [
       "react/react-in-jsx-scope": 0,
       "spaced-comment": ["error", "always", { markers: ["/"] }],
       "new-cap": 0,
-      // ...next.configs.recommended.rules,
     },
   },
 ];

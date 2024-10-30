@@ -31,7 +31,7 @@ export default [
       },
     },
     plugins: {
-      "@next/next": next,
+      next,
       "@typescript-eslint": typescriptEslint,
       react,
     },

@@ -1,19 +1,23 @@
 # dependencies
 /node_modules
 
-# next.js
-/.next/
+# build
+.next
 
 # debug
 yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+react-app-env.d.ts
 
-# environment
-.env
+# husky
+.husky
+
+# vscode
+.vscode

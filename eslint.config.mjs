@@ -31,9 +31,9 @@ export default [
       },
     },
     plugins: {
+      "@next/next": pluginNext,
       "@typescript-eslint": typescriptEslint,
       react,
-      "@next/next": pluginNext,
     },
     rules: {
       "react/jsx-no-unused-vars": "off",
@@ -41,7 +41,7 @@ export default [
       "react/react-in-jsx-scope": 0,
       "spaced-comment": ["error", "always", { markers: ["/"] }],
       "new-cap": 0,
-      ...pluginNext.configs.recommended.rules,
+      // ...pluginNext.configs.recommended.rules,
     },
   },
 ];

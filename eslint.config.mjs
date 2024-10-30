@@ -1,5 +1,6 @@
 import globals from "globals";
 import react from "eslint-plugin-react";
+import next from "@next/eslint-plugin-next";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import typescriptParser from "@typescript-eslint/parser";
 import reactRecommended from "eslint-plugin-react/configs/recommended.js";
@@ -32,6 +33,7 @@ export default [
     plugins: {
       "@typescript-eslint": typescriptEslint,
       react,
+      next,
     },
     rules: {
       "react/jsx-no-unused-vars": "off",

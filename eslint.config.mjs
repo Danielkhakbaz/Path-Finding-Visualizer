@@ -3,6 +3,7 @@ import react from "eslint-plugin-react";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import typescriptParser from "@typescript-eslint/parser";
 import reactRecommended from "eslint-plugin-react/configs/recommended.js";
+import pluginNext from "@next/eslint-plugin-next";
 
 export default [
   {
@@ -32,6 +33,7 @@ export default [
     plugins: {
       "@typescript-eslint": typescriptEslint,
       react,
+      "@next/next": pluginNext,
     },
     rules: {
       "react/jsx-no-unused-vars": "off",
@@ -39,6 +41,7 @@ export default [
       "react/react-in-jsx-scope": 0,
       "spaced-comment": ["error", "always", { markers: ["/"] }],
       "new-cap": 0,
+      ...pluginNext.configs.recommended.rules,
     },
   },
 ];
